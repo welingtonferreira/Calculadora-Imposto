@@ -1,0 +1,74 @@
+unit uPersist;
+
+interface
+
+Uses  Data.DB, Data.SqlExpr, System.Classes, System.SysUtils, Datasnap.DBClient,
+      SimpleDS, Vcl.Dialogs;
+
+type
+
+  TDGRSQLConnection = class (TSQLConnection)
+  private
+    procedure DBSQLConnectionBeforeConnect(Sender: TObject);
+  public
+    constructor Create(AOwner: TComponent); override;
+  end;
+
+  TDGRSimpleDataSet = class (TSimpleDataSet)
+  private
+    FTableName: string;
+    const
+      SQL = 'SELECT * FROM %s WHERE Id = %d';
+  public
+    constructor Create(AOwner: TComponent; ASqlConnection: TDGRSQLConnection; const ATableName: string);
+    procedure LoadById(const aID: integer);
+  end;
+
+implementation
+
+{ TDGRSQLConnection }
+
+constructor TDGRSQLConnection.Create(AOwner: TComponent);
+begin
+  inherited;
+  Self.BeforeConnect := DBSQLConnectionBeforeConnect;
+end;
+
+procedure TDGRSQLConnection.DBSQLConnectionBeforeConnect(Sender: TObject);
+var
+  vIniParams: TStringList;
+  vI: integer;
+begin
+  try
+    vIniParams := TStringList.Create;
+    try
+      vIniParams.LoadFromFile(ExtractFilePath(ParamStr(0) ) + 'Parametros.ini');
+      for vI := 0 to vIniParams.Count - 1 do
+        Self.Params.Values[vIniParams.Names[vI]] := vIniParams.ValueFromIndex[vI];
+    finally
+      vIniParams.Free;
+    end;
+  except
+    on E: Exception do
+    begin
+      ShowMessage('TDGRSQLConnection.DBSQLConnectionBeforeConnect' + #13 + E.Message);
+    end;
+  end;
+end;
+
+{ TDGRSimpleDataSet }
+
+constructor TDGRSimpleDataSet.Create(AOwner: TComponent; ASqlConnection: TDGRSQLConnection; const ATableName: string);
+begin
+  inherited Create(AOwner);
+  Self.SetConnection(ASqlConnection);
+  Self.FTableName := ATableName;
+end;
+
+procedure TDGRSimpleDataSet.LoadById(const aID: integer);
+begin
+  Self.DataSet.CommandText := Format(SQL, [Self.FTableName, aID]);
+  Self.Open;
+end;
+
+end.

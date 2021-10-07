@@ -1,0 +1,15 @@
+program TheosCalculadora;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {frmCalculadora},
+  Calculadora in 'Calculadora.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCalculadora, frmCalculadora);
+  Application.Run;
+end.

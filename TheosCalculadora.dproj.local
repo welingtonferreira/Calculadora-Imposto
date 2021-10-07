@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/07 09:25:47.000.389,D:\theos-master\Calculadora\source\Calculadora.dproj=D:\Theos-Calculadora\TheosCalculadora.dproj</Transaction>
+    <Transaction>2021/10/07 09:26:25.000.316,D:\theos-master\Calculadora\source\CalculadoraUn.pas=D:\Theos-Calculadora\Calculadora.pas</Transaction>
+    <Transaction>2021/10/07 09:32:57.000.531,D:\Theos-Calculadora\uPrincipal.dfm=D:\theos-master\Calculadora\source\MainUn.dfm</Transaction>
+    <Transaction>2021/10/07 09:32:57.000.531,D:\Theos-Calculadora\uPrincipal.pas=D:\theos-master\Calculadora\source\MainUn.pas</Transaction>
+    <Transaction>2021/10/07 16:19:37.853,D:\TheosSistemas\uCalculadora.pas=D:\TheosSistemas\Calculadora.pas</Transaction>
+  </Transactions>
+</BorlandProject>

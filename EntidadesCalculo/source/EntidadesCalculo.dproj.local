@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/07 09:47:18.000.988,D:\Theos-Calculadora\EntidadesCalculo\source\MainForm.pas=D:\Theos-Calculadora\EntidadesCalculo\source\uCadFuncionarios.pas</Transaction>
+    <Transaction>2021/10/07 09:47:18.000.988,D:\Theos-Calculadora\EntidadesCalculo\source\MainForm.dfm=D:\Theos-Calculadora\EntidadesCalculo\source\uCadFuncionarios.dfm</Transaction>
+    <Transaction>2021/10/07 09:58:30.000.591,D:\Theos-Calculadora\EntidadesCalculo\source\FuncionarioControllerUn.pas=D:\Theos-Calculadora\EntidadesCalculo\source\uControllerFuncionario.pas</Transaction>
+    <Transaction>2021/10/07 10:00:54.000.039,D:\Theos-Calculadora\EntidadesCalculo\source\PersistenciaUn.pas=D:\Theos-Calculadora\EntidadesCalculo\source\uPersistFuncionarios.pas</Transaction>
+    <Transaction>2021/10/07 10:01:19.000.770,D:\Theos-Calculadora\EntidadesCalculo\source\uControllerFuncionario.pas=D:\Theos-Calculadora\EntidadesCalculo\source\uControllerFuncionarios.pas</Transaction>
+    <Transaction>2021/10/07 10:03:06.000.342,D:\Theos-Calculadora\EntidadesCalculo\source\uFuncionarios.pas=D:\Theos-Calculadora\EntidadesCalculo\source\FuncionarioUn.pas</Transaction>
+    <Transaction>2021/10/07 12:49:20.000.547,=D:\TheosSistemas\EntidadesCalculo\source\FuncionarioControllerUn.pas</Transaction>
+    <Transaction>2021/10/07 12:49:20.000.580,=D:\TheosSistemas\EntidadesCalculo\source\FuncionarioUn.pas</Transaction>
+    <Transaction>2021/10/07 12:49:20.000.623,=D:\TheosSistemas\EntidadesCalculo\source\Persistencia.pas</Transaction>
+    <Transaction>2021/10/07 12:49:20.000.655,=D:\TheosSistemas\EntidadesCalculo\source\PersistenciaUn.pas</Transaction>
+    <Transaction>2021/10/07 12:49:46.000.004,D:\TheosSistemas\EntidadesCalculo\source\FuncionarioControllerUn.pas=D:\TheosSistemas\EntidadesCalculo\source\uControllerFuncionarios.pas</Transaction>
+    <Transaction>2021/10/07 12:50:06.000.507,D:\TheosSistemas\EntidadesCalculo\source\Persistencia.pas=D:\TheosSistemas\EntidadesCalculo\source\uPersist.pas</Transaction>
+    <Transaction>2021/10/07 12:50:35.000.093,D:\TheosSistemas\EntidadesCalculo\source\FuncionarioUn.pas=D:\TheosSistemas\EntidadesCalculo\source\uFuncionarios.pas</Transaction>
+    <Transaction>2021/10/07 12:50:52.000.719,D:\TheosSistemas\EntidadesCalculo\source\PersistenciaUn.pas=D:\TheosSistemas\EntidadesCalculo\source\uPersistFuncionarios.pas</Transaction>
+  </Transactions>
+</BorlandProject>
